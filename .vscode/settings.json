@@ -1,4 +1,5 @@
 {
     "commentTranslate.source": "intellsmi.comment-translate-ali.cloud",
-    "commentTranslate.targetLanguage": "zh-CN"
+    "commentTranslate.targetLanguage": "zh-CN",
+    "C_Cpp.errorSquiggles": "disabled"
 }
