@@ -48,7 +48,9 @@ int main(int argc,char *argv[])
     */
     memset(&serv_addr,0,sizeof(serv_addr));
     serv_addr.sin_family=AF_INET;
+    //需要将
     serv_addr.sin_addr.s_addr=htonl(INADDR_ANY);
+    //需要将端口号从主机字节序转变成网络字节序
     serv_addr.sin_port=htons(atoi(argv[1]));
 
     if(bind(serv_sock,(struct sockaddr*) &serv_addr,sizeof(serv_addr))==-1)
